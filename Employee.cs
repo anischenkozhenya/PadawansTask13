@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PadawansTask13
 {
-    class Employee
+    public class Employee
     {
         private string Surname;
         private int Age;
