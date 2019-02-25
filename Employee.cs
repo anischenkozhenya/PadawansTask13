@@ -10,27 +10,31 @@ namespace PadawansTask13
     {
         private string Surname;
         private int Age;
+
         public Employee()
         {
+
         }
-        public Employee(int age, string surname)
+
+        public Employee(string surname, int age)
         {
-            Age = age;
             Surname = surname;
+            Age = age;
         }
-        private string GetAge()
+
+        private string GetAgeString()
         {
-            string res = Age.ToString();
-            return res;
+            return Age.ToString();
         }
-        public void SetNewSurname(string newsurname)
+
+        public void SetNewSurname(string newSurname)
         {
-            Surname = newsurname;
+            Surname = newSurname;
         }
+
         public string GetInfo()
         {
-            string Info = "Surname: " + this.Surname + ",Age: " + this.Age;
-            return Info;
+            return "Surname: " + Surname + ", Age: " + Age;
         }
     }
 }
